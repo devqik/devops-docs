@@ -52,16 +52,16 @@
 
 - After running `aws-mfa --profile example-profile` aws-mfa will propigate the short term credentials to the file and it will look like this:
 
-    ```[example-profile-long-term]
+    ```
+    [example-profile-long-term]
     aws_access_key_id = YOUR_LONGTERM_KEY_ID
     aws_secret_access_key = YOUR_LONGTERM_ACCESS_KEY
-
 
     [example-profile]
     aws_access_key_id = <POPULATED_BY_AWS-MFA>
     aws_secret_access_key = <POPULATED_BY_AWS-MFA>
-    aws_security_token = <POPULATED_BY_AWS-MFA>```
-
+    aws_security_token = <POPULATED_BY_AWS-MFA>
+    ```
 
 - [NOTE] Usually the mfa will require re-authentication every 24 hours, so if you are trying to access an aws service and its not working like `aws s3 ls` the first thing i would do is to make sure that i am already autheticated through aws-mfa.
 
