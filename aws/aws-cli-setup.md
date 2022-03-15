@@ -34,7 +34,7 @@
 
 ## Install aws-mfa
 
-- You can install the aws-mfa tool through PIP
+- You can install the aws-mfa tool through PIP so make sure you have python installed on your machine
 
     `$ pip install aws-mfa`
 
