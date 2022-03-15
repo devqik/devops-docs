@@ -64,6 +64,3 @@
     ```
 
 - [NOTE] Usually the mfa will require re-authentication every 24 hours, so if you are trying to access an aws service and its not working like `aws s3 ls` the first thing i would do is to make sure that i am already autheticated through aws-mfa.
-
-
-- [NOTE] `aws-mfa --profile example-profile` We are using multi aws accounts now so you can specify a name of your aws profile here. The default profile name is `default`. The value can also be provided by the environment variable `AWS_PROFILE`.
